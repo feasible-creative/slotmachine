@@ -16,6 +16,7 @@ button{
   border-color: white;
   box-shadow: 0 .25rem .25rem rgba(0, 0, 0, .5);
   margin: auto;
+  margin-top: 2rem;
   display: flex;
  
 }
@@ -23,13 +24,13 @@ button{
 
 button:hover{
 cursor: pointer;
-opacity: 85%;
+opacity: 90%;
 box-shadow: 0 .35rem .35rem rgba(0, 0, 0, .75);
   
 }
 
 button:active{
-  opacity: 90%;
+  opacity: 85%;
 
 }
 

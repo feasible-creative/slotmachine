@@ -8,37 +8,40 @@
 
 
 function slotSpin(){
-  // let userBet = parseInt(prompt("Place your bet!"));
-  // // console.log(typeof(userBet))
+    // let userBet = parseInt(prompt("Place your bet!"));
+    // // console.log(typeof(userBet))
 for (i = 0; i < 3; i++){
 
-  function getSpinResult(spinOptions = ['7', 'BAR', 'Free Play']){ 
-      
-      return spinResult = spinOptions[Math.floor(Math.random()*spinOptions.length)];
+    function getSpinResult(spinOptions = ['7', 'BAR', 'Free Play']){ 
+        
+        return spinResult = spinOptions[Math.floor(Math.random()*spinOptions.length)];
 
-  }
- 
-  getSpinResult();
+    }
+   
+    getSpinResult();
+
+    
+    // let element = document.createElement('div');
+    // element.innerText = spinResult;
+    // element.setAttribute('class', 'casino');
+    // document.body.appendChild(element);
+
 
   
-  // let element = document.createElement('div');
-  // element.innerText = spinResult;
-  // element.setAttribute('class', 'casino');
-  // document.body.appendChild(element);
-
-
-
 imgArray = ['img_1.jpg', 'img_2.jpg', 'img_3.jpg']
+
+
+  
 
 function getRandomImg(){ 
 
-  randomIndex = Math.floor(Math.random()* imgArray.length);
+    randomIndex = Math.floor(Math.random()* imgArray.length);
 
-  selectedImg = imgArray[randomIndex]
+    selectedImg = imgArray[randomIndex]
 
-  document.getElementById('slotResult').src = `./img/${selectedImg}`
+    document.getElementById('slotResult').src = `./img/${selectedImg}`
 
-  slotResult.className = 'casino';
+    slotResult.className = 'casino';
 
 
 
@@ -48,15 +51,33 @@ function getRandomImg(){
 
 getRandomImg();
 
-  
+    
 
-
-
-
-
-  
+ 
+    
 };
 
 };
 
 slotSpin(4);
+
+// let button = document.getElementById('slot-button');
+// button.addEventListener('click', function(){
+//   alert('hi');
+// });
+
+
+let button = document.getElementById('slot-button');
+button.addEventListener('click', function getRandomImg(){ 
+
+  randomIndex = Math.floor(Math.random()* imgArray.length);
+
+  selectedImg = imgArray[randomIndex]
+
+  document.getElementById('slotResult').src = `./img/${selectedImg}`
+
+  slotResult.className = 'casino'});
+
+
+
+
