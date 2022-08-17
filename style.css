@@ -8,7 +8,7 @@ button{
   color: white;
   font-size: 2rem;
   background-color: rgb(44, 76, 255);
-  text-shadow: 0 .25rem .25rem rgba(0, 0, 0, .25);a
+  text-shadow: 0 .25rem .25rem rgba(0, 0, 0, .25);
   padding: .5rem 10rem;
   border-radius: 5rem;
   border-style: solid;
@@ -19,7 +19,6 @@ button{
   display: flex;
  
 }
-
 
 
 button:hover{
