@@ -4,21 +4,28 @@
   font-family: sans-serif;
 }
 
+.button-parent{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
 button{
+  width: 75%;
+  padding: .5rem 0rem;
   color: white;
   font-size: 2rem;
   background-color: rgb(44, 76, 255);
   text-shadow: 0 .25rem .25rem rgba(0, 0, 0, .25);
-  padding: .5rem 10rem;
   border-radius: 5rem;
   border-style: solid;
   border-width: .25rem;
   border-color: white;
   box-shadow: 0 .25rem .25rem rgba(0, 0, 0, .5);
-  margin: auto;
   margin-top: 2rem;
-  display: flex;
- 
+
 }
 
 
@@ -43,6 +50,7 @@ button:active{
 body{
   background: url(img/felt.jpg);
   background-repeat: repeat;
+  max-width: 100% !important;
 }
 
 h1{
@@ -55,9 +63,9 @@ h1{
 
 
 .header-img{
-  width: 25rem;
+  width: 20rem;
   max-width: 100%;
-  display: block;
+  display: flex;
   margin: auto;
   margin-bottom: 2rem;
   
@@ -65,9 +73,10 @@ h1{
 
 .slotMachine{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
-  width: 100%;
+  gap: .25rem;
+  width: 100vw;
   background-color: rgb(0, 0, 0);
   padding: 1rem 0rem;
   box-shadow: 0 .25rem .25rem rgba(0, 0, 0, .5);
@@ -76,8 +85,8 @@ h1{
 
 .casino{
   box-shadow: 0 .25rem .25rem rgba(0, 0, 0, .5);
-  width: 10rem;
-  height: 10rem;
+  width: 7rem;
+  height: 7rem;
   border-radius: 1rem;
   object-fit: cover;
   
@@ -103,18 +112,24 @@ h1{
 
     
 button{
+  width: 30rem;
   font-size: 3rem;
-  padding: 1rem 15rem;
   border-radius: 8rem;
   border-width: .5rem;
   margin-top: 4rem;
  
 }
 
+
+
+
 .slotMachine{
   box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .5);
+  gap: 1rem;
 
 }
+
+
 
 
 }
