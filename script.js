@@ -8,30 +8,11 @@
 
 
 function slotSpin(){
-    // let userBet = parseInt(prompt("Place your bet!"));
-    // // console.log(typeof(userBet))
-for (i = 0; i < 3; i++){
-
-    function getSpinResult(spinOptions = ['7', 'BAR', 'Free Play']){ 
-        
-        return spinResult = spinOptions[Math.floor(Math.random()*spinOptions.length)];
-
-    }
-   
-    getSpinResult();
-
     
-    // let element = document.createElement('div');
-    // element.innerText = spinResult;
-    // element.setAttribute('class', 'casino');
-    // document.body.appendChild(element);
-
+for (i = 0; i < 1; i++){
 
   
 imgArray = ['img_1.jpg', 'img_2.jpg', 'img_3.jpg']
-
-
-  
 
 function getRandomImg(){ 
 
@@ -39,21 +20,13 @@ function getRandomImg(){
     selectedImg = imgArray[randomIndex]
     document.getElementById('slotResult').src = `./img/${selectedImg}`
     slotResult.className = 'casino';
-
-
 }
-
 
 
 getRandomImg();
 
     
-
- 
-    
-};
-
-};
+}};
 
 slotSpin(4);
 
@@ -65,14 +38,28 @@ slotSpin(4);
 
 let button = document.getElementById('slot-button');
 button.addEventListener('click', function getRandomImg(){ 
-
+ 
   randomIndex = Math.floor(Math.random()* imgArray.length);
-
   selectedImg = imgArray[randomIndex]
 
   document.getElementById('slotResult').src = `./img/${selectedImg}`
+  slotResult.className = 'casino'}
+  
+   
+  
+  );
 
-  slotResult.className = 'casino'});
+console.log(slotResult);
+
+  if (slotResult = "http://127.0.0.1:5500/img/img_1.jpg"){
+    console.log("check");
+  }
+  
+
+
+
+
+  
 
 
 
