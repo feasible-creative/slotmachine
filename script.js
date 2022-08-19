@@ -19,11 +19,11 @@ imgArray = ['img_1.jpg', 'img_2.jpg', 'img_3.jpg']
 let button = document.getElementById('slot-button');
 button.addEventListener('click', function getRandomImg(){ 
  
-  randomIndex = Math.floor(Math.random()* imgArray.length);
-  selectedImg = imgArray[randomIndex]
+randomIndex = Math.floor(Math.random()* imgArray.length);
+selectedImg = imgArray[randomIndex]
 
-  document.getElementById('slotResult').src = `./img/${selectedImg}`
-  slotResult.className = 'casino'}
+document.getElementById('slotResult').src = `./img/${selectedImg}`
+slotResult.className = 'casino'}
   
    
   
@@ -45,27 +45,33 @@ button.addEventListener('click', function getRandomImg(){
     let button3 = document.getElementById('slot-button');
     button.addEventListener('click', function getRandomImg(){ 
      
-      randomIndex = Math.floor(Math.random()* imgArray.length);
-      selectedImg = imgArray[randomIndex]
+    randomIndex = Math.floor(Math.random()* imgArray.length);
+    selectedImg = imgArray[randomIndex]
     
-      document.getElementById('slotResult3').src = `./img/${selectedImg}`
-      slotResult.className = 'casino'}
+    document.getElementById('slotResult3').src = `./img/${selectedImg}`
+    slotResult.className = 'casino'}
       
        
       
       );
     
+    };
   
 
 
-
-
-
-
-
-};
+slotSpin();
   
+  
+  // console.log(slotResult3, slotResult2);
+
+// if(slotResult3.casino === slotResult2.casino){
+//   alert('epic');
+// }
+// else{
+//   console.log('fix')
+// }
 
 
-  slotSpin();
+
+
 
