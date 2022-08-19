@@ -28,12 +28,10 @@ getRandomImg();
     
 }};
 
-slotSpin(4);
+slotSpin();
 
-// let button = document.getElementById('slot-button');
-// button.addEventListener('click', function(){
-//   alert('hi');
-// });
+
+
 
 
 let button = document.getElementById('slot-button');
@@ -48,16 +46,6 @@ button.addEventListener('click', function getRandomImg(){
    
   
   );
-
-console.log(slotResult);
-
-  if (slotResult = "http://127.0.0.1:5500/img/img_1.jpg"){
-    console.log("check");
-  }
-  
-
-
-
 
   
 
