@@ -14,24 +14,6 @@ function slotSpin(){
   
 imgArray = ['img_1.jpg', 'img_2.jpg', 'img_3.jpg']
 
-// function getRandomImg(){ 
-
-//     randomIndex = Math.floor(Math.random()* imgArray.length);
-//     selectedImg = imgArray[randomIndex]
-//     document.getElementById('slotResult').src = `./img/${selectedImg}`
-//     slotResult.className = 'casino';
-// }
-
-
-// getRandomImg();
-
-    
-// }
-
-
-
-
-
 
 
 let button = document.getElementById('slot-button');
@@ -46,6 +28,41 @@ button.addEventListener('click', function getRandomImg(){
    
   
   );
+
+  let button2 = document.getElementById('slot-button');
+  button.addEventListener('click', function getRandomImg(){ 
+   
+    randomIndex = Math.floor(Math.random()* imgArray.length);
+    selectedImg = imgArray[randomIndex]
+  
+    document.getElementById('slotResult2').src = `./img/${selectedImg}`
+    slotResult.className = 'casino'}
+    
+     
+    
+    );
+  
+    let button3 = document.getElementById('slot-button');
+    button.addEventListener('click', function getRandomImg(){ 
+     
+      randomIndex = Math.floor(Math.random()* imgArray.length);
+      selectedImg = imgArray[randomIndex]
+    
+      document.getElementById('slotResult3').src = `./img/${selectedImg}`
+      slotResult.className = 'casino'}
+      
+       
+      
+      );
+    
+  
+
+
+
+
+
+
+
 };
   
 
