@@ -9,26 +9,26 @@
 
 function slotSpin(){
     
-for (i = 0; i < 1; i++){
+// for (i = 0; i < 1; i++){
 
   
 imgArray = ['img_1.jpg', 'img_2.jpg', 'img_3.jpg']
 
-function getRandomImg(){ 
+// function getRandomImg(){ 
 
-    randomIndex = Math.floor(Math.random()* imgArray.length);
-    selectedImg = imgArray[randomIndex]
-    document.getElementById('slotResult').src = `./img/${selectedImg}`
-    slotResult.className = 'casino';
-}
+//     randomIndex = Math.floor(Math.random()* imgArray.length);
+//     selectedImg = imgArray[randomIndex]
+//     document.getElementById('slotResult').src = `./img/${selectedImg}`
+//     slotResult.className = 'casino';
+// }
 
 
-getRandomImg();
+// getRandomImg();
 
     
-}};
+// }
 
-slotSpin();
+
 
 
 
@@ -46,9 +46,9 @@ button.addEventListener('click', function getRandomImg(){
    
   
   );
-
+};
   
 
 
-
+  slotSpin();
 
