@@ -49,7 +49,13 @@ function slotSpin(){
 
     console.log(resultArray);  
 
+    if (resultArray[0] === resultArray[1] && resultArray[1] === resultArray[2]){
+      alert('WINNER!');
+    }
+
     });
+
+
 };
   
 

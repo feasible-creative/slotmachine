@@ -95,6 +95,20 @@ h1{
 
 
 
+footer{
+  display: flex;
+  padding-top: 10rem;
+  
+}
+
+.footer-logo{
+  width: 10rem;
+  margin: auto;
+}
+
+
+
+
 @media only screen and (min-width: 1000px){
   .header-img{
     width: 40rem;}
