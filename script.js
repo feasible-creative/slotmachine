@@ -15,7 +15,6 @@ imgArray = ['img_1.jpg', 'img_2.jpg', 'img_3.jpg'];
 let dict = {'img_1.jpg': 1, 'img_2.jpg': 2, 'img_3.jpg': 3}
 
 
-
 function slotSpin(){
     
     let button = document.getElementById('slot-button');
@@ -28,13 +27,9 @@ function slotSpin(){
  
     resultArray[0] = dict[selectedImg];
 
-  } 
-  
-  );
 
-  let button2 = document.getElementById('slot-button');
-  button.addEventListener('click', function getRandomImg(){ 
-   
+    
+
     randomIndex = Math.floor(Math.random()* imgArray.length);
     selectedImg = imgArray[randomIndex]
   
@@ -42,12 +37,8 @@ function slotSpin(){
     
     resultArray[1] = dict[selectedImg];
 
-  
-  }
-    );
-  
-    let button3 = document.getElementById('slot-button');
-    button.addEventListener('click', function getRandomImg(){ 
+
+
      
     randomIndex = Math.floor(Math.random()* imgArray.length);
     selectedImg = imgArray[randomIndex]
@@ -56,17 +47,11 @@ function slotSpin(){
     
     resultArray[2] = dict[selectedImg];
 
-    // console.log(dict[selectedImg]);
-    
- }
+    console.log(resultArray);  
+
+    });
+};
   
-
-
-      );
-
-      console.log(resultArray);  
-     
-    };
 
 
 slotSpin();
