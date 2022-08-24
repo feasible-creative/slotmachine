@@ -131,3 +131,10 @@ button{
 
 
 }
+
+#credits{
+  color: white;
+  font-size: 2rem;
+  margin: 2rem 0rem;
+  padding: 0rem 1rem;
+}
