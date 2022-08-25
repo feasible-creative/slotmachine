@@ -15,6 +15,8 @@ imgArray = ['img_1.jpg', 'img_2.jpg', 'img_3.jpg'];
 let dict = {'img_1.jpg': 1, 'img_2.jpg': 2, 'img_3.jpg': 3}
 
 
+
+
 function slotSpin(){
     
     let button = document.getElementById('slot-button');
@@ -50,7 +52,10 @@ function slotSpin(){
     console.log(resultArray);  
 
     if (resultArray[0] === resultArray[1] && resultArray[1] === resultArray[2]){
-      alert('WINNER!');
+      document.querySelector('#credits').innerHTML = "WINNER!";
+    }
+    if (resultArray[0] !== resultArray[1] || resultArray[1] !== resultArray[2]){
+      document.querySelector('#credits').innerHTML = "Try Again";
     }
 
     });
