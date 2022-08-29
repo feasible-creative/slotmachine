@@ -24,7 +24,7 @@ button{
   border-width: .25rem;
   border-color: white;
   box-shadow: 0 .25rem .25rem rgba(0, 0, 0, .5);
-  margin-top: 2rem;
+  margin-top: rem;
 
 }
 
@@ -61,6 +61,9 @@ h1{
   font-size: 3rem;
 }
 
+h2{
+  margin: 0;
+}
 
 .header-img{
   width: 20rem;
@@ -96,6 +99,7 @@ h1{
 .credits{
   text-align: center;
   font-weight: bold;
+  color: white;
 }
 
 footer{

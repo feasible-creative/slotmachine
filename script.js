@@ -13,8 +13,7 @@ resultArray = [];
 imgArray = ['img_1.jpg', 'img_2.jpg', 'img_3.jpg'];
 
 let dict = {'img_1.jpg': 1, 'img_2.jpg': 2, 'img_3.jpg': 3}
-
-
+let creditCount = document.querySelector('#creditsCount').innerHTML = parseInt(50);
 
 
 function slotSpin(){
@@ -53,11 +52,16 @@ function slotSpin(){
 
     if (resultArray[0] === resultArray[1] && resultArray[1] === resultArray[2]){
       document.querySelector('#credits').innerHTML = "WINNER!";
+      document.querySelector('#creditsCount').innerHTML -= parseInt(-5);
     }
     if (resultArray[0] !== resultArray[1] || resultArray[1] !== resultArray[2]){
       document.querySelector('#credits').innerHTML = "Try Again";
+      document.querySelector('#creditsCount').innerHTML -= parseInt(2);
     }
 
+    // if credits
+
+    console.log(creditCount);
     });
 
 
