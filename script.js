@@ -13,10 +13,12 @@ resultArray = [];
 imgArray = ['img_1.jpg', 'img_2.jpg', 'img_3.jpg'];
 
 let dict = {'img_1.jpg': 1, 'img_2.jpg': 2, 'img_3.jpg': 3}
-let creditCount = document.querySelector('#creditsCount').innerHTML = parseInt(50);
 
 
 function slotSpin(){
+
+    document.querySelector('#creditsCount').textContent = parseInt(50);
+
     
     let button = document.getElementById('slot-button');
     button.addEventListener('click', function getRandomImg(){ 
@@ -51,17 +53,28 @@ function slotSpin(){
     console.log(resultArray);  
 
     if (resultArray[0] === resultArray[1] && resultArray[1] === resultArray[2]){
-      document.querySelector('#credits').innerHTML = "WINNER!";
-      document.querySelector('#creditsCount').innerHTML -= parseInt(-5);
+      document.querySelector('#credits').textContent = "WINNER!";
+      document.querySelector('#creditsCount').textContent -= parseInt(-5);
     }
     if (resultArray[0] !== resultArray[1] || resultArray[1] !== resultArray[2]){
-      document.querySelector('#credits').innerHTML = "Try Again";
-      document.querySelector('#creditsCount').innerHTML -= parseInt(2);
+      document.querySelector('#credits').textContent = "Try Again";
+      document.querySelector('#creditsCount').textContent -= parseInt(2);
     }
 
-    // if credits
 
-    console.log(creditCount);
+    // if credits
+    // console.log(document.querySelector('#creditsCount').innerHTML);
+
+
+    if (document.querySelector('#creditsCount').textContent < 0){
+      document.querySelector('#creditsCount').textContent = 'GAME OVER';
+      if (document.querySelector('#creditsCount').textContent = 'GAME OVER'){
+
+      }
+     
+    };
+ 
+
     });
 
 
