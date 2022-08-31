@@ -29,18 +29,26 @@ function slotSpin(){
     resultArray[i] = dict[selectedImg];}
 
     console.log(resultArray);  
-    
-    if (resultArray[0] === resultArray[1] && resultArray[1] === resultArray[2]){
-      document.querySelector('#credits').textContent = "WINNER!";
-      document.querySelector('#creditsCount').textContent -= parseInt(-5);
-      document.querySelector('.slotMachine').style.backgroundColor = 'green';
 
+    if (resultArray[0] === 1 && resultArray[1] === 1 && resultArray[2] === 1){
+      document.querySelector('#credits').textContent = "BIG WIN!";
+      document.querySelector('#creditsCount').textContent -= parseInt(-25);
+      document.querySelector('.slotMachine').style.backgroundColor = 'purple';
     }
-    if (resultArray[0] !== resultArray[1] || resultArray[1] !== resultArray[2]){
+    
+    else if (resultArray[0] === resultArray[1] && resultArray[1] === resultArray[2]){
+      document.querySelector('#credits').textContent = "WINNER!";
+      document.querySelector('#creditsCount').textContent -= parseInt(-10);
+      document.querySelector('.slotMachine').style.backgroundColor = 'green';
+    }
+
+    else if (resultArray[0] !== resultArray[1] || resultArray[1] !== resultArray[2]){
       document.querySelector('#credits').textContent = "Try Again";
       document.querySelector('#creditsCount').textContent -= parseInt(2);
       document.querySelector('.slotMachine').style.backgroundColor = 'black';
     }
+
+
 
 
     if (document.querySelector('#creditsCount').textContent < 0){
