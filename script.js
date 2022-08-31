@@ -68,7 +68,9 @@ function slotSpin(){
 
     if (document.querySelector('#creditsCount').textContent < 0){
       document.querySelector('#creditsCount').textContent = 'GAME OVER';
-      if (document.querySelector('#creditsCount').textContent = 'GAME OVER'){
+      if (document.querySelector('.creditContainer').textContent = 'GAME OVER')
+      
+      {
 
       }
      

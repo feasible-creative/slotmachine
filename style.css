@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   font-family: sans-serif;
+
 }
 
 .button-parent{
@@ -9,7 +10,9 @@
   justify-content: center;
 }
 
-
+body{
+  background-image: url(img/felt.jpg);
+}
 
 
 button{
@@ -103,9 +106,22 @@ h2{
   margin: 1rem, 0rem;
 }
 
+
+.creditContainer{
+  display: flex;
+  color: white;
+  font-weight: bold;
+  justify-content: center;
+  margin: 2rem 0rem;
+  font-size: 1.5rem;
+  
+}
+
+
+
 footer{
   display: flex;
-  padding-top: 15rem;
+  padding-top: 10rem;
   
 }
 
