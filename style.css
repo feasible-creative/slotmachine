@@ -30,7 +30,6 @@ button{
   border-width: .25rem;
   border-color: white;
   box-shadow: 0 .25rem .25rem rgba(0, 0, 0, .5);
-  touch-action: manipulation;
 
 }
 
@@ -165,20 +164,11 @@ button{
 
 @keyframes spin {
     0%   {transform: translateY(25px);} 
-
     50%   {transform: translateY(35px);} 
-    50%   {transform: scale(1.25);} 
-
-  
+    50%   {transform: scale(2.5);}   
     100% {transform: translateY(0px);}  /* end point */
    
 }
-
-@-webkit-keyframes spin {
-    0%   {transform: translateY(0px);}
-    100% {transform: translateY(-360px);}
-}
-
 
 
 
