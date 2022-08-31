@@ -22,36 +22,20 @@ function slotSpin(){
     
     let button = document.getElementById('slot-button');
     button.addEventListener('click', function getRandomImg(){ 
+
+    for (let i = 0; i <= imgArray.length-1; i++){
     
     randomIndex = Math.floor(Math.random()* imgArray.length);
     selectedImg = imgArray[randomIndex]
 
-    document.getElementById('slotResult').src = `./img/${selectedImg}`
- 
-    resultArray[0] = dict[selectedImg];
-
-
+    document.getElementById('slotResult'+[i]).src = `./img/${selectedImg}`
+    resultArray[i] = dict[selectedImg];
+   
     
-
-    randomIndex = Math.floor(Math.random()* imgArray.length);
-    selectedImg = imgArray[randomIndex]
-  
-    document.getElementById('slotResult2').src = `./img/${selectedImg}`
-    
-    resultArray[1] = dict[selectedImg];
-
-
-
-     
-    randomIndex = Math.floor(Math.random()* imgArray.length);
-    selectedImg = imgArray[randomIndex]
-    
-    document.getElementById('slotResult3').src = `./img/${selectedImg}`
-    
-    resultArray[2] = dict[selectedImg];
-
+    }
     console.log(resultArray);  
 
+    
     if (resultArray[0] === resultArray[1] && resultArray[1] === resultArray[2]){
       document.querySelector('#credits').textContent = "WINNER!";
       document.querySelector('#creditsCount').textContent -= parseInt(-5);
@@ -61,9 +45,6 @@ function slotSpin(){
       document.querySelector('#creditsCount').textContent -= parseInt(2);
     }
 
-
-    // if credits
-    // console.log(document.querySelector('#creditsCount').innerHTML);
 
 
     if (document.querySelector('#creditsCount').textContent < 0){
