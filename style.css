@@ -166,7 +166,7 @@ button{
     0%   {transform: translateY(25px);} 
 
     50%   {transform: translateY(35px);} 
-    50%   {transform: scale(1.5);} 
+    50%   {transform: scale(1.25);} 
 
   
     100% {transform: translateY(0px);}  /* end point */
