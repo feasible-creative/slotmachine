@@ -15,6 +15,8 @@ body{
 }
 
 
+
+
 button{
   width: 60%;
   padding: .5rem 0rem;
@@ -69,11 +71,16 @@ h2{
 }
 
 .header-img{
-  width: 20rem;
+  width: 15rem;
   max-width: 100%;
-  display: flex;
-  margin: auto;
   
+}
+
+.header-container{
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0rem;
+
 }
 
 .slotMachine{
@@ -114,6 +121,9 @@ h2{
   justify-content: center;
   margin: 2rem 0rem;
   font-size: 1.5rem;
+  background-color: black;
+  padding: 1rem 0rem;
+  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .5);
   
 }
 
@@ -129,6 +139,74 @@ footer{
   width: 10rem;
   margin: auto;
 }
+
+
+
+button{
+  animation: rotate 1s;
+  overflow: hidden;
+
+}
+
+
+/* actual spinning */
+.header-img {
+  animation: spin 1s;
+  overflow: hidden;
+  /*
+    spin:   the keyframes (=animation) we want to have
+    5s:     how long it should take for one iteration
+    infinite: how often should it repeat
+    linear: the easing between the different key frames You can also try 'ease'
+  */
+}
+
+
+@keyframes spin {
+    0%   {transform: translateY(25px);} 
+
+    50%   {transform: translateY(35px);} 
+    50%   {transform: scale(2.5);} 
+
+  
+    100% {transform: translateY(0px);}  /* end point */
+   
+}
+
+@-webkit-keyframes spin {
+    0%   {transform: translateY(0px);}
+    100% {transform: translateY(-360px);}
+}
+
+
+
+
+@keyframes rotate {
+
+  0%   {transform: rotate(180deg);} 
+  100%   {transform: rotate(360deg);}  /* end point */
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -176,3 +254,4 @@ button{
   margin: 2rem 0rem;
   padding: 0rem 1rem;
 }
+

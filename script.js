@@ -74,9 +74,6 @@ slotSpin();
 
 
 
-
-
-
 // newArray = [1, 2, 3]
 
 // let result = document.querySelector('result')
