@@ -152,7 +152,7 @@ button{
 /* actual spinning */
 .header-img {
   animation: spin 1s;
-  overflow: hidden;
+
   /*
     spin:   the keyframes (=animation) we want to have
     5s:     how long it should take for one iteration
