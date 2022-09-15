@@ -6,6 +6,35 @@
 
 }
 
+
+
+
+.slotMachine{
+  animation: glide 1s;
+
+  /*
+    spin:   the keyframes (=animation) we want to have
+    5s:     how long it should take for one iteration
+    infinite: how often should it repeat
+    linear: the easing between the different key frames You can also try 'ease'
+  */
+}
+
+
+
+@keyframes glide {
+    0%   {transform: translateX(-100%);} 
+    0%  {opacity: 0}
+    100% {transform: translateY(0%);} 
+   
+}
+
+
+
+
+
+
+
 .button-parent{
   display: flex;
   justify-content: center;
@@ -77,6 +106,8 @@ h2{
 .header-img{
   width: 15rem;
   max-width: 100%;
+  z-index: 9999;
+  
   
 }
 
